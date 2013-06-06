@@ -4,42 +4,12 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="968f19b2-b0df-405c-8a65-7dd0fac0c589" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/resources/background.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/resources/tab.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/resources/titlebar.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/resources/titlebar_end.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ImageType.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/Reddit.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/class-use/Reddit.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/allclasses-frame.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/allclasses-noframe.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/constant-values.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/deprecated-list.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/help-doc.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/index-files/index-1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/index-files/index-2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/index-files/index-3.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/index-files/index-4.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/index-files/index-5.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/index-files/index-6.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/index-files/index-7.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/index-files/index-8.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/overview-tree.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/package-frame.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/package-list" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/package-summary.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/package-tree.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/package-use.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/stylesheet.css" />
-      <change type="MOVED" beforePath="C:\Users\Erik\IdeaProjects\JRAW\src\SubReddit.java" afterPath="$PROJECT_DIR$/src/Subreddit.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SubredditStyle.java" afterPath="$PROJECT_DIR$/src/SubredditStyle.java" />
+    <list default="true" id="968f19b2-b0df-405c-8a65-7dd0fac0c589" name="Default" comment="Subreddit completed, should be possible to submit posts">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="JRAW.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="968f19b2-b0df-405c-8a65-7dd0fac0c589" time="1370542451922" ignored="false" />
+    <file path="/Dummy.txt" changelist="968f19b2-b0df-405c-8a65-7dd0fac0c589" time="1370547210821" ignored="false" />
     <file path="/LICENSE" changelist="968f19b2-b0df-405c-8a65-7dd0fac0c589" time="1370540263045" ignored="false" />
     <file path="/README" changelist="968f19b2-b0df-405c-8a65-7dd0fac0c589" time="1370430156840" ignored="false" />
     <file path="/Reddit.java" changelist="968f19b2-b0df-405c-8a65-7dd0fac0c589" time="1370542242636" ignored="false" />
@@ -55,7 +25,7 @@
     <file path="/RedditUser.java" changelist="968f19b2-b0df-405c-8a65-7dd0fac0c589" time="1370532221589" ignored="false" />
     <file path="/SubReddit.java" changelist="968f19b2-b0df-405c-8a65-7dd0fac0c589" time="1370524763139" ignored="false" />
     <file path="/Thing.java" changelist="968f19b2-b0df-405c-8a65-7dd0fac0c589" time="1370528560010" ignored="false" />
-    <file path="/Subreddit.java" changelist="968f19b2-b0df-405c-8a65-7dd0fac0c589" time="1370546371562" ignored="false" />
+    <file path="/Subreddit.java" changelist="968f19b2-b0df-405c-8a65-7dd0fac0c589" time="1370547156081" ignored="false" />
     <file path="/Post.java" changelist="968f19b2-b0df-405c-8a65-7dd0fac0c589" time="1370527639748" ignored="false" />
     <file path="/PrivateMessage.java" changelist="968f19b2-b0df-405c-8a65-7dd0fac0c589" time="1370527704684" ignored="false" />
     <file path="/CreatedThing.java" changelist="968f19b2-b0df-405c-8a65-7dd0fac0c589" time="1370532387586" ignored="false" />
@@ -149,10 +119,13 @@
       <file leaf-file-name="Subreddit.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Subreddit.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="328" column="30" selection-start="13795" selection-end="13795" vertical-scroll-proportion="0.8210526">
+            <state line="109" column="50" selection-start="4184" selection-end="4184" vertical-scroll-proportion="0.728988">
               <folding>
                 <element signature="n#!!doc;n#SubredditPostUrl#0;n#Subreddit#0" expanded="false" />
                 <element signature="n#!!doc;n#Reddit#0;n#Subreddit#0" expanded="false" />
+                <element signature="method#Subreddit#0;class#Subreddit#0" expanded="false" />
+                <element signature="method#Subreddit#1;class#Subreddit#0" expanded="false" />
+                <element signature="method#GetRSlashAll#0;class#Subreddit#0" expanded="false" />
                 <element signature="method#GetFrontPage#0;class#Subreddit#0" expanded="false" />
                 <element signature="method#GetPosts#0;class#Subreddit#0" expanded="false" />
                 <element signature="method#GetNew#0;class#Subreddit#0" expanded="false" />
@@ -161,6 +134,16 @@
                 <element signature="method#Subscribe#0;class#Subreddit#0" expanded="false" />
                 <element signature="method#Unsubscribe#0;class#Subreddit#0" expanded="false" />
                 <element signature="method#GetSettings#0;class#Subreddit#0" expanded="false" />
+                <element signature="method#ClearFlairTemplates#0;class#Subreddit#0" expanded="false" />
+                <element signature="method#AddFlairTemplate#0;class#Subreddit#0" expanded="false" />
+                <element signature="method#SetUserFlair#0;class#Subreddit#0" expanded="false" />
+                <element signature="method#UploadHeaderImage#0;class#Subreddit#0" expanded="false" />
+                <element signature="method#GetStyleSheet#0;class#Subreddit#0" expanded="false" />
+                <element signature="method#AcceptModeratorInvite#0;class#Subreddit#0" expanded="false" />
+                <element signature="method#RemoveModerator#0;class#Subreddit#0" expanded="false" />
+                <element signature="method#toString#0;class#Subreddit#0" expanded="false" />
+                <element signature="method#SubmitTextPost#0;class#Subreddit#0" expanded="false" />
+                <element signature="method#SubmitPost#0;class#Subreddit#0" expanded="false" />
                 <element signature="n#!!doc;n#getReddit#0;n#Subreddit#0" expanded="false" />
               </folding>
             </state>
@@ -565,7 +548,11 @@
       <created>1370542477451</created>
       <updated>1370542477451</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Subreddit completed, should be possible to submit posts">
+      <created>1370546430391</created>
+      <updated>1370546430391</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -590,9 +577,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32182628" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32182628" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297062" sideWeight="0.670068" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -659,7 +646,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Flair controls added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Subreddit completed, should be possible to submit posts" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -679,6 +666,7 @@
     <MESSAGE value="Reddit class complete, some base functionality has been added" />
     <MESSAGE value="Dependencies added, ClearFlairTemplates method added&#10;" />
     <MESSAGE value="Flair controls added" />
+    <MESSAGE value="Subreddit completed, should be possible to submit posts" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -816,10 +804,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Subreddit.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="328" column="30" selection-start="13795" selection-end="13795" vertical-scroll-proportion="0.8210526">
+        <state line="109" column="50" selection-start="4184" selection-end="4184" vertical-scroll-proportion="0.728988">
           <folding>
             <element signature="n#!!doc;n#SubredditPostUrl#0;n#Subreddit#0" expanded="false" />
             <element signature="n#!!doc;n#Reddit#0;n#Subreddit#0" expanded="false" />
+            <element signature="method#Subreddit#0;class#Subreddit#0" expanded="false" />
+            <element signature="method#Subreddit#1;class#Subreddit#0" expanded="false" />
+            <element signature="method#GetRSlashAll#0;class#Subreddit#0" expanded="false" />
             <element signature="method#GetFrontPage#0;class#Subreddit#0" expanded="false" />
             <element signature="method#GetPosts#0;class#Subreddit#0" expanded="false" />
             <element signature="method#GetNew#0;class#Subreddit#0" expanded="false" />
@@ -828,6 +819,16 @@
             <element signature="method#Subscribe#0;class#Subreddit#0" expanded="false" />
             <element signature="method#Unsubscribe#0;class#Subreddit#0" expanded="false" />
             <element signature="method#GetSettings#0;class#Subreddit#0" expanded="false" />
+            <element signature="method#ClearFlairTemplates#0;class#Subreddit#0" expanded="false" />
+            <element signature="method#AddFlairTemplate#0;class#Subreddit#0" expanded="false" />
+            <element signature="method#SetUserFlair#0;class#Subreddit#0" expanded="false" />
+            <element signature="method#UploadHeaderImage#0;class#Subreddit#0" expanded="false" />
+            <element signature="method#GetStyleSheet#0;class#Subreddit#0" expanded="false" />
+            <element signature="method#AcceptModeratorInvite#0;class#Subreddit#0" expanded="false" />
+            <element signature="method#RemoveModerator#0;class#Subreddit#0" expanded="false" />
+            <element signature="method#toString#0;class#Subreddit#0" expanded="false" />
+            <element signature="method#SubmitTextPost#0;class#Subreddit#0" expanded="false" />
+            <element signature="method#SubmitPost#0;class#Subreddit#0" expanded="false" />
             <element signature="n#!!doc;n#getReddit#0;n#Subreddit#0" expanded="false" />
           </folding>
         </state>
