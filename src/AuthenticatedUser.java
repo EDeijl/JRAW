@@ -1,3 +1,5 @@
+import com.google.gson.JsonElement;
+
 /**
  * User: Erik
  * Date: 5-6-13
@@ -11,10 +13,20 @@ public class AuthenticatedUser {
     private final String UnmoderatedUrl = "/r/mod/about/unmoderated.json";
     private final String ModMailUrl = "/message/moderators.json";
 
+    private String ModHash;
 
-    public AuthenticatedUser() {
+    public AuthenticatedUser(Reddit reddit, JsonElement json) {
 
     }
+
+    public String getModHash() {
+        return ModHash;
+    }
+
+    public void setModHash(String modHash) {
+        ModHash = modHash;
+    }
+
 
     //TODO things Users do
 }

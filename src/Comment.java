@@ -1,6 +1,6 @@
+import com.google.gson.JsonObject;
 import com.google.gson.TypeAdapter;
 import com.google.gson.stream.JsonReader;
-import com.google.gson.stream.JsonToken;
 import com.google.gson.stream.JsonWriter;
 
 import java.io.IOException;
@@ -37,7 +37,7 @@ public class Comment extends VotableThing {
     private Comment[] Comments;
     //endregion
 
-    public Comment(Reddit reddit, JsonToken token) {
+    public Comment(Reddit reddit, JsonObject token) {
 
         super(reddit, token);
         //TODO Constructor

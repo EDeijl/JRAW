@@ -1,4 +1,4 @@
-import com.google.gson.stream.JsonToken;
+import com.google.gson.JsonObject;
 
 /**
  * User: Erik
@@ -10,8 +10,8 @@ public class CreatedThing extends Thing {
 
     private Reddit Reddit;
 
-    public CreatedThing(Reddit reddit, JsonToken jsonToken) {
-        super(jsonToken);
+    public CreatedThing(Reddit reddit, JsonObject json) {
+        super(json);
         Reddit = reddit;
         //TODO populate this with json data
 
