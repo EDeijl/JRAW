@@ -4,43 +4,15 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="968f19b2-b0df-405c-8a65-7dd0fac0c589" name="Default" comment="Dependencies added, ClearFlairTemplates method added&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/commons-beanutils-1.8.3-javadoc.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/commons-beanutils-1.8.3-sources.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/commons-beanutils-1.8.3.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/commons-beanutils-bean-collections-1.8.3.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/commons-beanutils-core-1.8.3.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/commons-codec-1.6.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/commons-logging-1.1.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/fluent-hc-4.2.5.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/httpclient-4.2.5.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/httpclient-cache-4.2.5.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/httpcore-4.2.4.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/httpmime-4.2.5.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/joda-time-2.2-javadoc.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/joda-time-2.2-sources.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/joda-time-2.2.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Apache_HttpComponents.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/Erik.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/MIT.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MyExlusionStrategy.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/commons_beanutils_1_8_3_javadoc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/javadoc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/joda_time_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="C:\Users\Erik\IdeaProjects\JRAW\src\SubReddit.java" afterPath="$PROJECT_DIR$/src/Subreddit.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JRAW.iml" afterPath="$PROJECT_DIR$/JRAW.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/JsonIgnore.java" afterPath="$PROJECT_DIR$/src/JsonIgnore.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LICENSE" afterPath="$PROJECT_DIR$/LICENSE" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Reddit.java" afterPath="$PROJECT_DIR$/src/Reddit.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+    <list default="true" id="968f19b2-b0df-405c-8a65-7dd0fac0c589" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="JRAW.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="968f19b2-b0df-405c-8a65-7dd0fac0c589" time="1370541557912" ignored="false" />
+    <file path="/Dummy.txt" changelist="968f19b2-b0df-405c-8a65-7dd0fac0c589" time="1370541602156" ignored="false" />
     <file path="/LICENSE" changelist="968f19b2-b0df-405c-8a65-7dd0fac0c589" time="1370540263045" ignored="false" />
     <file path="/README" changelist="968f19b2-b0df-405c-8a65-7dd0fac0c589" time="1370430156840" ignored="false" />
-    <file path="/Reddit.java" changelist="968f19b2-b0df-405c-8a65-7dd0fac0c589" time="1370538019713" ignored="false" />
+    <file path="/Reddit.java" changelist="968f19b2-b0df-405c-8a65-7dd0fac0c589" time="1370542242636" ignored="false" />
     <file path="/fragment.java" changelist="968f19b2-b0df-405c-8a65-7dd0fac0c589" time="1370531882179" ignored="false" />
     <file path="/AuthenticatedUser.java" changelist="968f19b2-b0df-405c-8a65-7dd0fac0c589" time="1370525065051" ignored="false" />
     <file path="/Comment.java" changelist="968f19b2-b0df-405c-8a65-7dd0fac0c589" time="1370434890233" ignored="false" />
@@ -53,7 +25,7 @@
     <file path="/RedditUser.java" changelist="968f19b2-b0df-405c-8a65-7dd0fac0c589" time="1370532221589" ignored="false" />
     <file path="/SubReddit.java" changelist="968f19b2-b0df-405c-8a65-7dd0fac0c589" time="1370524763139" ignored="false" />
     <file path="/Thing.java" changelist="968f19b2-b0df-405c-8a65-7dd0fac0c589" time="1370528560010" ignored="false" />
-    <file path="/Subreddit.java" changelist="968f19b2-b0df-405c-8a65-7dd0fac0c589" time="1370541498625" ignored="false" />
+    <file path="/Subreddit.java" changelist="968f19b2-b0df-405c-8a65-7dd0fac0c589" time="1370542421912" ignored="false" />
     <file path="/Post.java" changelist="968f19b2-b0df-405c-8a65-7dd0fac0c589" time="1370527639748" ignored="false" />
     <file path="/PrivateMessage.java" changelist="968f19b2-b0df-405c-8a65-7dd0fac0c589" time="1370527704684" ignored="false" />
     <file path="/CreatedThing.java" changelist="968f19b2-b0df-405c-8a65-7dd0fac0c589" time="1370532387586" ignored="false" />
@@ -127,7 +99,7 @@
       <file leaf-file-name="Subreddit.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Subreddit.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="191" column="208" selection-start="7768" selection-end="7768" vertical-scroll-proportion="0.33274958">
+            <state line="218" column="22" selection-start="9004" selection-end="9004" vertical-scroll-proportion="0.8701754">
               <folding>
                 <element signature="n#!!doc;n#SubredditPostUrl#0;n#Subreddit#0" expanded="false" />
                 <element signature="n#!!doc;n#Reddit#0;n#Subreddit#0" expanded="false" />
@@ -184,7 +156,7 @@
       <file leaf-file-name="Reddit.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Reddit.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="329" column="49" selection-start="11348" selection-end="11348" vertical-scroll-proportion="0.0">
+            <state line="217" column="130" selection-start="7078" selection-end="7078" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="n#!!doc;n#SslLoginUrl#0;n#Reddit#0" expanded="false" />
@@ -197,12 +169,10 @@
                 <element signature="method#GetMe#0;class#Reddit#0" expanded="false" />
                 <element signature="method#GetSubreddit#0;class#Reddit#0" expanded="false" />
                 <element signature="method#ComposePrivateMessage#0;class#Reddit#0" expanded="false" />
-                <element signature="method#CreateRequest#0;class#Reddit#0" expanded="false" />
                 <element signature="method#CreateGet#0;class#Reddit#0" expanded="false" />
                 <element signature="method#CreatePost#0;class#Reddit#0" expanded="false" />
                 <element signature="method#GetResponseString#0;class#Reddit#0" expanded="false" />
-                <element signature="e#10707#10722#0" expanded="true" />
-                <element signature="n#!!doc;n#getUser#0;n#Reddit#0" expanded="false" />
+                <element signature="e#10830#10845#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -220,8 +190,10 @@
       <file leaf-file-name="JsonIgnore.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/JsonIgnore.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="0" selection-start="429" selection-end="429" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="15" column="0" selection-start="346" selection-end="346" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -229,7 +201,7 @@
       <file leaf-file-name="MyExlusionStrategy.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MyExlusionStrategy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="13" selection-start="415" selection-end="415" vertical-scroll-proportion="0.0">
+            <state line="15" column="13" selection-start="409" selection-end="409" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -281,10 +253,10 @@
         <option value="$PROJECT_DIR$/src/Post.java" />
         <option value="$PROJECT_DIR$/src/CreatedThing.java" />
         <option value="$PROJECT_DIR$/src/VotableThing.java" />
-        <option value="$PROJECT_DIR$/src/Reddit.java" />
         <option value="$PROJECT_DIR$/src/JsonIgnore.java" />
         <option value="$PROJECT_DIR$/src/MyExlusionStrategy.java" />
         <option value="$PROJECT_DIR$/LICENSE" />
+        <option value="$PROJECT_DIR$/src/Reddit.java" />
         <option value="$PROJECT_DIR$/src/Subreddit.java" />
       </list>
     </option>
@@ -522,7 +494,11 @@
       <created>1370532413045</created>
       <updated>1370532413045</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Dependencies added, ClearFlairTemplates method added&#10;">
+      <created>1370541610565</created>
+      <updated>1370541610565</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -547,9 +523,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32222223" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32182628" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297062" sideWeight="0.670068" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -557,16 +533,16 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24972796" sideWeight="0.28684807" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3288889" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32850778" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2497332" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297062" sideWeight="0.670068" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24493062" sideWeight="0.67777777" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24493062" sideWeight="0.6781737" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32962137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -616,7 +592,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Reddit class complete, some base functionality has been added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dependencies added, ClearFlairTemplates method added&#10;" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -634,6 +610,7 @@
     <MESSAGE value="Update README" />
     <MESSAGE value="Not much, but it is a start" />
     <MESSAGE value="Reddit class complete, some base functionality has been added" />
+    <MESSAGE value="Dependencies added, ClearFlairTemplates method added&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -687,8 +664,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/JsonIgnore.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="429" selection-end="429" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="15" column="0" selection-start="346" selection-end="346" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -701,7 +680,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MyExlusionStrategy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="13" selection-start="415" selection-end="415" vertical-scroll-proportion="0.0">
+        <state line="15" column="13" selection-start="409" selection-end="409" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -736,9 +715,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/FlairType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="36" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Reddit.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="329" column="49" selection-start="11348" selection-end="11348" vertical-scroll-proportion="0.0">
+        <state line="217" column="130" selection-start="7078" selection-end="7078" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="n#!!doc;n#SslLoginUrl#0;n#Reddit#0" expanded="false" />
@@ -751,26 +737,17 @@
             <element signature="method#GetMe#0;class#Reddit#0" expanded="false" />
             <element signature="method#GetSubreddit#0;class#Reddit#0" expanded="false" />
             <element signature="method#ComposePrivateMessage#0;class#Reddit#0" expanded="false" />
-            <element signature="method#CreateRequest#0;class#Reddit#0" expanded="false" />
             <element signature="method#CreateGet#0;class#Reddit#0" expanded="false" />
             <element signature="method#CreatePost#0;class#Reddit#0" expanded="false" />
             <element signature="method#GetResponseString#0;class#Reddit#0" expanded="false" />
-            <element signature="e#10707#10722#0" expanded="true" />
-            <element signature="n#!!doc;n#getUser#0;n#Reddit#0" expanded="false" />
+            <element signature="e#10830#10845#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FlairType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="36" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0">
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Subreddit.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="191" column="208" selection-start="7768" selection-end="7768" vertical-scroll-proportion="0.33274958">
+        <state line="218" column="22" selection-start="9004" selection-end="9004" vertical-scroll-proportion="0.8701754">
           <folding>
             <element signature="n#!!doc;n#SubredditPostUrl#0;n#Subreddit#0" expanded="false" />
             <element signature="n#!!doc;n#Reddit#0;n#Subreddit#0" expanded="false" />
