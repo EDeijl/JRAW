@@ -81,6 +81,14 @@ public class Subreddit extends Thing {
         super(null);
     }
 
+    /**
+     * Subreddit Constructor.
+     *
+     * @param reddit current reddit
+     * @param json   json object with data
+     * @throws InvocationTargetException
+     * @throws IllegalAccessException
+     */
     protected Subreddit(Reddit reddit, JsonObject json) throws InvocationTargetException, IllegalAccessException {
         super(json);
         Reddit = reddit;
@@ -98,6 +106,12 @@ public class Subreddit extends Thing {
             Name = Name.substring(0, Name.length() - 1);
     }
 
+    /**
+     * Get the All page of reddit
+     *
+     * @param reddit current reddit.
+     * @return the page as subreddit.
+     */
     public Subreddit GetRSlashAll(final Reddit reddit) {
         Subreddit rSlashAll = new Subreddit() {
             {
@@ -111,6 +125,12 @@ public class Subreddit extends Thing {
         return rSlashAll;
     }
 
+    /**
+     * Get the frontpage of reddit
+     *
+     * @param reddit current reddit
+     * @return the page as subreddit.
+     */
     public Subreddit GetFrontPage(final Reddit reddit) {
         Subreddit frontPage = new Subreddit() {
             {
@@ -124,26 +144,53 @@ public class Subreddit extends Thing {
         return frontPage;
     }
 
+    /**
+     * get all posts in current Subreddit
+     *
+     * @return a Listing with the posts
+     */
     public Listing<Post> GetPosts() {
         if (Name == "/")
             return new Listing<Post>(Reddit, "/.json");
         return new Listing<Post>(Reddit, String.format(SubredditPostUrl, Name));
     }
 
+    /**
+     * Get new posts in the current subreddit
+     *
+     * @return a Listing with the posts
+     */
     public Listing<Post> GetNew() {
         if (Name == "/")
             return new Listing<Post>(Reddit, "/new.json");
         return new Listing<Post>(Reddit, String.format(SubredditNewUrl, Name));
     }
 
+    /**
+     * Get the mod queue
+     *
+     * @return the modqueue as a listing of votableThings
+     */
     public Listing<VotableThing> GetModQueue() {
         return new Listing<VotableThing>(Reddit, String.format(ModqueueUrl, Name));
     }
 
+    /**
+     * Get all unmoderated links
+     *
+     * @return a Listing with all unmoderated links as Posts
+     */
     public Listing<Post> GetUnmoderatedLinks() {
         return new Listing<Post>(Reddit, String.format(UnmoderatedUrl, Name));
     }
 
+    /**
+     * Subscribe to a subreddit
+     *
+     * @throws AuthenticationException
+     * @throws IOException
+     * @throws IllegalAccessException
+     */
     public void Subscribe() throws AuthenticationException, IOException, IllegalAccessException {
         if (Reddit.User == null)
             throw new AuthenticationException("No user logged in.");
@@ -158,6 +205,13 @@ public class Subreddit extends Thing {
 
     }
 
+    /**
+     * Unsubscribe from the subreddit
+     *
+     * @throws AuthenticationException
+     * @throws IOException
+     * @throws IllegalAccessException
+     */
     public void Unsubscribe() throws AuthenticationException, IOException, IllegalAccessException {
         if (Reddit.User == null)
             throw new AuthenticationException("No user logged in.");
@@ -172,6 +226,13 @@ public class Subreddit extends Thing {
 
     }
 
+    /**
+     * Get the settings for a subreddit.
+     *
+     * @return the settings as a SubredditSettings
+     * @throws ClientProtocolException
+     * @throws IOException
+     */
     public SubredditSettings GetSettings() throws ClientProtocolException, IOException {
         try {
             if (Reddit.User == null)
@@ -192,6 +253,13 @@ public class Subreddit extends Thing {
         }
     }
 
+    /**
+     * Clears the flair templates
+     *
+     * @param flairType the type of flair. restricted to Link or User
+     * @throws IOException
+     * @throws IllegalAccessException
+     */
     public void ClearFlairTemplates(final FlairType flairType) throws IOException, IllegalAccessException {
         HttpUriRequest request = Reddit.CreatePost(ClearFlairTemplatesUrl, true);
         HttpResponse response = Reddit.WritePostBody(request, new Object() {
@@ -202,6 +270,16 @@ public class Subreddit extends Thing {
         String data = Reddit.GetResponseString(response);
     }
 
+    /**
+     * Adds a flair template
+     *
+     * @param cssClass     the cssClass
+     * @param flairType    the type of flair. restricted to Link or User
+     * @param textin       the text in the flair
+     * @param userEditable user editable true or false/
+     * @throws IOException
+     * @throws IllegalAccessException
+     */
     public void AddFlairTemplate(final String cssClass, final FlairType flairType, final String textin, final boolean userEditable) throws IOException, IllegalAccessException {
         HttpUriRequest request = Reddit.CreatePost(FlairTemplateUrl, true);
         HttpResponse response = Reddit.WritePostBody(request, new Object() {
@@ -218,6 +296,15 @@ public class Subreddit extends Thing {
         JsonObject json = (JsonObject) new JsonParser().parse(data);
     }
 
+    /**
+     * Sets the usersFlair
+     *
+     * @param user     username to set the flair for
+     * @param cssClass the flair's css class
+     * @param textIn   the flair's text
+     * @throws IOException
+     * @throws IllegalAccessException
+     */
     public void SetUserFlair(final String user, final String cssClass, final String textIn) throws IOException, IllegalAccessException {
         HttpUriRequest request = Reddit.CreatePost(SetUserFlairUrl, true);
         HttpResponse response = Reddit.WritePostBody(request, new Object() {
@@ -231,6 +318,14 @@ public class Subreddit extends Thing {
 
     }
 
+    /**
+     * Uploads the header image for a Subreddit
+     *
+     * @param name      name of image
+     * @param imageType type of the image. Restricted to jpg or png
+     * @param file      image file as a byte array
+     * @throws IOException
+     */
     public void UploadHeaderImage(String name, ImageType imageType, byte[] file) throws IOException {
         HttpPost request = (HttpPost) Reddit.CreatePost(UploadImageUrl, true);
 
@@ -245,7 +340,7 @@ public class Subreddit extends Thing {
         }
         MultipartEntity multipartEntity = new MultipartEntity();
 
-        multipartEntity.addPart("name", null);
+        multipartEntity.addPart("name", new StringBody(name));
         multipartEntity.addPart("uh", new StringBody(Reddit.User.getModHash()));
         multipartEntity.addPart("r", new StringBody(Name));
         multipartEntity.addPart("img_type", new StringBody(imageType == ImageType.PNG ? "png" : "jpg"));
@@ -260,6 +355,12 @@ public class Subreddit extends Thing {
         //TODO: Detect Errors
     }
 
+    /**
+     * Gets the stylesheet for the subreddit
+     *
+     * @return a SubredditStyle object
+     * @throws IOException
+     */
     public SubredditStyle GetStyleSheet() throws IOException {
         HttpUriRequest request = Reddit.CreateGet(String.format(StylesheetUrl, Name), true);
         HttpResponse response = new DefaultHttpClient().execute(request);
@@ -268,6 +369,12 @@ public class Subreddit extends Thing {
         return new SubredditStyle(Reddit, this, json);
     }
 
+    /**
+     * Accept the moderator invite.
+     *
+     * @throws IOException
+     * @throws IllegalAccessException
+     */
     public void AcceptModeratorInvite() throws IOException, IllegalAccessException {
         HttpUriRequest request = Reddit.CreatePost(AcceptModeratorInviteUrl, true);
         HttpResponse response = Reddit.WritePostBody(request, new Object() {
@@ -277,6 +384,13 @@ public class Subreddit extends Thing {
         });
     }
 
+    /**
+     * remove an moderator
+     *
+     * @param idIn id to be removed
+     * @throws IOException
+     * @throws IllegalAccessException
+     */
     public void RemoveModerator(final String idIn) throws IOException, IllegalAccessException {
         HttpUriRequest request = Reddit.CreatePost(LeaveModerationUrl, true);
         HttpResponse response = Reddit.WritePostBody(request, new Object() {
@@ -293,6 +407,14 @@ public class Subreddit extends Thing {
         return "/r/" + DisplayName;
     }
 
+    /**
+     * Submit a text post
+     *
+     * @param titleIn title of post
+     * @param textIn  text of post
+     * @return a Post object
+     * @throws Exception
+     */
     public Post SubmitTextPost(final String titleIn, final String textIn) throws Exception {
         if (Reddit.User == null)
             throw new Exception("No user logged in.");
@@ -311,6 +433,14 @@ public class Subreddit extends Thing {
         //TODO: Error handling
     }
 
+    /**
+     * Submit a post with a link
+     *
+     * @param titleIn title of the post
+     * @param urlIn   url of the post
+     * @return a post object
+     * @throws Exception
+     */
     public Post SubmitPost(final String titleIn, final String urlIn) throws Exception {
         if (Reddit.User == null)
             throw new Exception("No user logged in.");

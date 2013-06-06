@@ -1,15 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AnalysisUIOptions">
-    <option name="SCOPE_TYPE" value="3" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="968f19b2-b0df-405c-8a65-7dd0fac0c589" name="Default" comment="Subreddit completed, should be possible to submit posts">
+    <list default="true" id="968f19b2-b0df-405c-8a65-7dd0fac0c589" name="Default" comment="comments added">
+      <change type="MOVED" beforePath="C:\Users\Erik\IdeaProjects\JRAW\src\SubReddit.java" afterPath="$PROJECT_DIR$/src/Subreddit.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/Reddit.html" afterPath="$PROJECT_DIR$/docs/Reddit.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/class-use/Reddit.html" afterPath="$PROJECT_DIR$/docs/class-use/Reddit.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/allclasses-frame.html" afterPath="$PROJECT_DIR$/docs/allclasses-frame.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/allclasses-noframe.html" afterPath="$PROJECT_DIR$/docs/allclasses-noframe.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/constant-values.html" afterPath="$PROJECT_DIR$/docs/constant-values.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/deprecated-list.html" afterPath="$PROJECT_DIR$/docs/deprecated-list.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/help-doc.html" afterPath="$PROJECT_DIR$/docs/help-doc.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/index-files/index-1.html" afterPath="$PROJECT_DIR$/docs/index-files/index-1.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/index-files/index-2.html" afterPath="$PROJECT_DIR$/docs/index-files/index-2.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/index-files/index-3.html" afterPath="$PROJECT_DIR$/docs/index-files/index-3.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/index-files/index-4.html" afterPath="$PROJECT_DIR$/docs/index-files/index-4.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/index-files/index-5.html" afterPath="$PROJECT_DIR$/docs/index-files/index-5.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/index-files/index-6.html" afterPath="$PROJECT_DIR$/docs/index-files/index-6.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/index-files/index-7.html" afterPath="$PROJECT_DIR$/docs/index-files/index-7.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/index-files/index-8.html" afterPath="$PROJECT_DIR$/docs/index-files/index-8.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/index.html" afterPath="$PROJECT_DIR$/docs/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/overview-tree.html" afterPath="$PROJECT_DIR$/docs/overview-tree.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/package-frame.html" afterPath="$PROJECT_DIR$/docs/package-frame.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/package-summary.html" afterPath="$PROJECT_DIR$/docs/package-summary.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/package-tree.html" afterPath="$PROJECT_DIR$/docs/package-tree.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/package-use.html" afterPath="$PROJECT_DIR$/docs/package-use.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="JRAW.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="968f19b2-b0df-405c-8a65-7dd0fac0c589" time="1370547210821" ignored="false" />
+    <file path="/Dummy.txt" changelist="968f19b2-b0df-405c-8a65-7dd0fac0c589" time="1370547426926" ignored="false" />
     <file path="/LICENSE" changelist="968f19b2-b0df-405c-8a65-7dd0fac0c589" time="1370540263045" ignored="false" />
     <file path="/README" changelist="968f19b2-b0df-405c-8a65-7dd0fac0c589" time="1370430156840" ignored="false" />
     <file path="/Reddit.java" changelist="968f19b2-b0df-405c-8a65-7dd0fac0c589" time="1370542242636" ignored="false" />
@@ -32,6 +51,7 @@
     <file path="/JsonIgnore.java" changelist="968f19b2-b0df-405c-8a65-7dd0fac0c589" time="1370538577622" ignored="false" />
     <file path="/MyExlusionStrategy.java" changelist="968f19b2-b0df-405c-8a65-7dd0fac0c589" time="1370538630164" ignored="false" />
     <file path="/ImageType.java" changelist="968f19b2-b0df-405c-8a65-7dd0fac0c589" time="1370543064113" ignored="false" />
+    <file path="$PROJECT_DIR$/docs/Subreddit.html" changelist="968f19b2-b0df-405c-8a65-7dd0fac0c589" time="1370547497797" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +139,7 @@
       <file leaf-file-name="Subreddit.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Subreddit.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="109" column="50" selection-start="4184" selection-end="4184" vertical-scroll-proportion="0.728988">
+            <state line="111" column="26" selection-start="4190" selection-end="4190" vertical-scroll-proportion="0.787307">
               <folding>
                 <element signature="n#!!doc;n#SubredditPostUrl#0;n#Subreddit#0" expanded="false" />
                 <element signature="n#!!doc;n#Reddit#0;n#Subreddit#0" expanded="false" />
@@ -296,6 +316,9 @@
   <component name="MavenProjectNavigator">
     <treeState />
   </component>
+  <component name="NamedScopeManager">
+    <scope name="src" pattern="" />
+  </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="1912" />
     <option name="y" value="-8" />
@@ -366,8 +389,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -382,6 +405,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="TODO_SCOPE" value="Project Files" />
     <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
@@ -552,7 +576,11 @@
       <created>1370546430391</created>
       <updated>1370546430391</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Subreddit completed, should be possible to submit posts">
+      <created>1370547228721</created>
+      <updated>1370547228721</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -583,7 +611,7 @@
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297062" sideWeight="0.670068" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2497332" sideWeight="0.6781737" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24972796" sideWeight="0.28684807" order="2" side_tool="true" content_ui="tabs" />
@@ -594,7 +622,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297062" sideWeight="0.670068" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24493062" sideWeight="0.6781737" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -646,7 +674,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Subreddit completed, should be possible to submit posts" />
+    <option name="LAST_COMMIT_MESSAGE" value="comments added" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -667,6 +695,7 @@
     <MESSAGE value="Dependencies added, ClearFlairTemplates method added&#10;" />
     <MESSAGE value="Flair controls added" />
     <MESSAGE value="Subreddit completed, should be possible to submit posts" />
+    <MESSAGE value="comments added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -804,7 +833,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Subreddit.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="109" column="50" selection-start="4184" selection-end="4184" vertical-scroll-proportion="0.728988">
+        <state line="111" column="26" selection-start="4190" selection-end="4190" vertical-scroll-proportion="0.787307">
           <folding>
             <element signature="n#!!doc;n#SubredditPostUrl#0;n#Subreddit#0" expanded="false" />
             <element signature="n#!!doc;n#Reddit#0;n#Subreddit#0" expanded="false" />
@@ -931,6 +960,21 @@
               </list>
             </option>
           </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <last-edited>src</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+          <order>
+            <scope name="src" />
+          </order>
         </settings>
       </state>
     </states>
