@@ -1,9 +1,8 @@
-import com.google.gson.Gson;
-import com.google.gson.JsonObject;
-import com.google.gson.JsonParser;
+import com.google.gson.*;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.reflect.TypeToken;
 import com.sun.javafx.iio.ImageStorage;
+import org.apache.commons.beanutils.BeanUtils;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.methods.HttpUriRequest;
@@ -12,6 +11,7 @@ import org.joda.time.DateTime;
 
 import javax.naming.AuthenticationException;
 import java.io.IOException;
+import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Type;
 
 /**
@@ -57,13 +57,13 @@ public class Subreddit extends Thing {
     @SerializedName("header_title")
     private String HeaderTitle;
     @SerializedName("over18")
-    private boolean NSFW;
+    private Boolean NSFW;
     @SerializedName("public_description")
     private String PublicDescription;
     @SerializedName("subscribers")
-    private int Subscribers;
+    private Integer Subscribers;
     @SerializedName("accounts_active")
-    private int ActiveUsers;
+    private Integer ActiveUsers;
     @SerializedName("title")
     private String Title;
     @SerializedName("url")
@@ -76,13 +76,14 @@ public class Subreddit extends Thing {
         super(null);
     }
 
-    protected Subreddit(Reddit reddit, JsonObject json) {
+    protected Subreddit(Reddit reddit, JsonObject json) throws InvocationTargetException, IllegalAccessException {
         super(json);
         Reddit = reddit;
         Type subredditType = new TypeToken<Subreddit>() {
         }.getType();
-        Gson gson = new Gson();
-        //TODO somthing converty
+        Gson gson = new GsonBuilder().setExclusionStrategies(new MyExlusionStrategy(JsonIgnore.class)).setFieldNamingPolicy(FieldNamingPolicy.LOWER_CASE_WITH_UNDERSCORES).serializeNulls().create();
+        Subreddit subreddit = gson.fromJson(json, subredditType);
+        BeanUtils.copyProperties(this, subreddit);
         Name = Url;
         if (Name.startsWith("/r/"))
             Name = Name.substring(3);
@@ -186,8 +187,14 @@ public class Subreddit extends Thing {
         }
     }
 
-    public void ClearFlairTemplates(FlairType flairType) {
-        //TODO
+    public void ClearFlairTemplates(final FlairType flairType) throws IOException, IllegalAccessException {
+        HttpUriRequest request = Reddit.CreatePost(ClearFlairTemplatesUrl, true);
+        HttpResponse response = Reddit.WritePostBody(request, new Object() {
+            String flair_type = flairType == FlairType.Link ? "LINK_FLAIR" : "USER_FLAIR";
+            String uh = Reddit.User.getModHash();
+            String r = Name;
+        });
+        String data = Reddit.GetResponseString(response);
     }
 
     public void AddFlairTemplate(String cssClass, FlairType flairType, String text, boolean userEditable) {

@@ -72,6 +72,17 @@ public class Reddit {
 
     //endregion
 
+    /**
+     * Log in to an account.
+     *
+     * @param username a username
+     * @param password the user's password
+     * @param useSsl   a boolean yes of no
+     * @return AuthenticatedUser returns an AuthenticatedUser Object
+     * @throws IOException
+     * @throws IllegalAccessException
+     * @throws AuthenticationException
+     */
     public AuthenticatedUser Login(final String username, final String password, boolean useSsl) throws IOException, IllegalAccessException, AuthenticationException {
         Cookies = new BasicCookieStore();
         HttpUriRequest request;
@@ -113,16 +124,29 @@ public class Reddit {
         return User;
     }
 
+    /**
+     * Get a specific user.
+     *
+     * @param name a username
+     * @return RedditUser
+     * @throws IOException
+     */
     public RedditUser GetUser(String name) throws IOException {
         HttpUriRequest request = CreateGet(String.format(UserInfoUrl, name), true);
         HttpClient client = new DefaultHttpClient();
         HttpResponse response = client.execute(request);
         String result = GetResponseString(response);
         Gson gson = new Gson();
-        JsonElement json = new JsonParser().parse(result);
+        JsonObject json = (JsonObject) new JsonParser().parse(result);
         return new RedditUser(this, json);
     }
 
+    /**
+     * Gets info about the currently authenticated user.
+     *
+     * @return An user with modhash, karma and new mail status.
+     * @throws IOException
+     */
     public AuthenticatedUser GetMe() throws IOException {
         HttpUriRequest request = CreateGet(MeUrl, true);
         HttpClient client = new DefaultHttpClient();
@@ -134,6 +158,13 @@ public class Reddit {
 
     }
 
+    /**
+     * Gets a specific subreddit.
+     *
+     * @param name a subreddit name.
+     * @return The requested subreddit.
+     * @throws IOException
+     */
     public Subreddit GetSubreddit(String name) throws IOException {
         if (name.startsWith("r/")) {
             name = name.substring(2);
@@ -144,6 +175,15 @@ public class Reddit {
         return (Subreddit) GetThing(String.format(SubredditAboutUrl, name), true);
     }
 
+    /**
+     * Handles message composition
+     *
+     * @param subject message subject
+     * @param body    raw markdown text
+     * @param to      the name of an existing user
+     * @throws IOException
+     * @throws IllegalAccessException
+     */
     public void ComposePrivateMessage(final String subject, final String body, final String to) throws IOException, IllegalAccessException {
         HttpUriRequest request = CreatePost(ComposeMessageUrl, true);
         HttpResponse response = WritePostBody(request, new Object() {
@@ -161,6 +201,14 @@ public class Reddit {
     //region Helpers
     private static DateTime lastRequest = new DateTime(Long.MIN_VALUE);
 
+    /**
+     * Creates a HttpRequest to the specified endpoint
+     *
+     * @param url           destination url, this can be with or without rood domain
+     * @param method        Http method only "GET" and "POST" are supported
+     * @param prependDomain true if http://reddit.com still has to be added to the url, false if not.
+     * @return an HttpRequest
+     */
     protected HttpUriRequest CreateRequest(String url, String method, boolean prependDomain) {
 
         HttpUriRequest request = null;
@@ -188,11 +236,25 @@ public class Reddit {
 
     }
 
+    /**
+     * Creates a GET request.
+     *
+     * @param url           the destination endpoint.
+     * @param prependDomain true if http://reddit.com still has to be added to the url, false if not.
+     * @return
+     */
     protected HttpUriRequest CreateGet(String url, boolean prependDomain) {
         return CreateRequest(url, "GET", prependDomain);
 
     }
 
+    /**
+     * Creates a POST request.
+     *
+     * @param url           the destination endpoint.
+     * @param prependDomain true if http://reddit.com still has to be added to the url, false if not.
+     * @return
+     */
     protected HttpUriRequest CreatePost(String url, boolean prependDomain) {
         HttpUriRequest request = CreateRequest(url, "POST", prependDomain);
         request.addHeader(new BasicHeader("Content-Type", "application/x-www-form-urlencoded"));
@@ -200,11 +262,27 @@ public class Reddit {
 
     }
 
+    /**
+     * Gets the response's body as a string
+     *
+     * @param response a HttpResponse
+     * @return The response body as a string.
+     * @throws UnknownHostException
+     * @throws IOException
+     */
     protected String GetResponseString(HttpResponse response) throws UnknownHostException, IOException {
 
         return EntityUtils.toString(response.getEntity());
     }
 
+    /**
+     * Get a reddit Thing.
+     *
+     * @param url           the destination endpoint.
+     * @param prependDomain true if http://reddit.com still has to be added to the url, false if not.
+     * @return
+     * @throws IOException
+     */
     protected Thing GetThing(String url, boolean prependDomain) throws IOException {
         HttpClient client = new DefaultHttpClient();
         HttpUriRequest request = CreateGet(url, prependDomain);
@@ -221,6 +299,12 @@ public class Reddit {
         HTML_SPECIALCHARS_TABLE.put("&", "%26");
     }
 
+    /**
+     * Replaces special characters with their HTML value
+     *
+     * @param s String which needs replacing.
+     * @return The string with replacements.
+     */
     static String HtmlSpecialChars_Decode_ENT_NOQUOTES(String s) {
         Enumeration enumeration = HTML_SPECIALCHARS_TABLE.keys();
         while (enumeration.hasMoreElements()) {
@@ -231,6 +315,15 @@ public class Reddit {
         return s;
     }
 
+    /**
+     * Writes a PostBody
+     *
+     * @param request the HttpRequest
+     * @param data    The object to send.
+     * @return A HttpResponse
+     * @throws IllegalAccessException
+     * @throws IOException
+     */
     protected HttpResponse WritePostBody(HttpUriRequest request, Object data) throws IllegalAccessException, IOException {
         Class<?> type = data.getClass();
         String value = "";
@@ -253,6 +346,12 @@ public class Reddit {
         return response;
     }
 
+    /**
+     * Convert unix time to local time.
+     *
+     * @param unixTimeStamp a unix timestamp
+     * @return a Joda DateTime value
+     */
     protected static DateTime UnixTimeStampToDate(int unixTimeStamp) {
         //Unix timestamp is seconds past epoch
         LocalDateTime dateTime = new LocalDateTime(1970, 1, 1, 0, 0, 0, 0);
