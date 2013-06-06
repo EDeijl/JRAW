@@ -5,11 +5,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="968f19b2-b0df-405c-8a65-7dd0fac0c589" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/resources/background.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/resources/tab.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/resources/titlebar.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/resources/titlebar_end.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ImageType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/Reddit.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/class-use/Reddit.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/allclasses-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/allclasses-noframe.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/constant-values.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/deprecated-list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/help-doc.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/index-files/index-1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/index-files/index-2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/index-files/index-3.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/index-files/index-4.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/index-files/index-5.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/index-files/index-6.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/index-files/index-7.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/index-files/index-8.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/overview-tree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/package-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/package-list" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/package-summary.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/package-tree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/package-use.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/stylesheet.css" />
+      <change type="MOVED" beforePath="C:\Users\Erik\IdeaProjects\JRAW\src\SubReddit.java" afterPath="$PROJECT_DIR$/src/Subreddit.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SubredditStyle.java" afterPath="$PROJECT_DIR$/src/SubredditStyle.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="JRAW.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="968f19b2-b0df-405c-8a65-7dd0fac0c589" time="1370541602156" ignored="false" />
+    <file path="/Dummy.txt" changelist="968f19b2-b0df-405c-8a65-7dd0fac0c589" time="1370542451922" ignored="false" />
     <file path="/LICENSE" changelist="968f19b2-b0df-405c-8a65-7dd0fac0c589" time="1370540263045" ignored="false" />
     <file path="/README" changelist="968f19b2-b0df-405c-8a65-7dd0fac0c589" time="1370430156840" ignored="false" />
     <file path="/Reddit.java" changelist="968f19b2-b0df-405c-8a65-7dd0fac0c589" time="1370542242636" ignored="false" />
@@ -25,12 +55,13 @@
     <file path="/RedditUser.java" changelist="968f19b2-b0df-405c-8a65-7dd0fac0c589" time="1370532221589" ignored="false" />
     <file path="/SubReddit.java" changelist="968f19b2-b0df-405c-8a65-7dd0fac0c589" time="1370524763139" ignored="false" />
     <file path="/Thing.java" changelist="968f19b2-b0df-405c-8a65-7dd0fac0c589" time="1370528560010" ignored="false" />
-    <file path="/Subreddit.java" changelist="968f19b2-b0df-405c-8a65-7dd0fac0c589" time="1370542421912" ignored="false" />
+    <file path="/Subreddit.java" changelist="968f19b2-b0df-405c-8a65-7dd0fac0c589" time="1370546371562" ignored="false" />
     <file path="/Post.java" changelist="968f19b2-b0df-405c-8a65-7dd0fac0c589" time="1370527639748" ignored="false" />
     <file path="/PrivateMessage.java" changelist="968f19b2-b0df-405c-8a65-7dd0fac0c589" time="1370527704684" ignored="false" />
     <file path="/CreatedThing.java" changelist="968f19b2-b0df-405c-8a65-7dd0fac0c589" time="1370532387586" ignored="false" />
     <file path="/JsonIgnore.java" changelist="968f19b2-b0df-405c-8a65-7dd0fac0c589" time="1370538577622" ignored="false" />
     <file path="/MyExlusionStrategy.java" changelist="968f19b2-b0df-405c-8a65-7dd0fac0c589" time="1370538630164" ignored="false" />
+    <file path="/ImageType.java" changelist="968f19b2-b0df-405c-8a65-7dd0fac0c589" time="1370543064113" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,6 +118,25 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
+    <method_breakpoints>
+      <breakpoint url="file://$PROJECT_DIR$/src/Reddit.java" line="211" class="Reddit" package="">
+        <option name="WATCH_ENTRY" value="true" />
+        <option name="WATCH_EXIT" value="true" />
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </method_breakpoints>
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -99,7 +149,7 @@
       <file leaf-file-name="Subreddit.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Subreddit.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="218" column="22" selection-start="9004" selection-end="9004" vertical-scroll-proportion="0.8701754">
+            <state line="328" column="30" selection-start="13795" selection-end="13795" vertical-scroll-proportion="0.8210526">
               <folding>
                 <element signature="n#!!doc;n#SubredditPostUrl#0;n#Subreddit#0" expanded="false" />
                 <element signature="n#!!doc;n#Reddit#0;n#Subreddit#0" expanded="false" />
@@ -113,6 +163,15 @@
                 <element signature="method#GetSettings#0;class#Subreddit#0" expanded="false" />
                 <element signature="n#!!doc;n#getReddit#0;n#Subreddit#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ImageType.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ImageType.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="5" selection-start="115" selection-end="115" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -147,7 +206,7 @@
       <file leaf-file-name="SubredditStyle.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SubredditStyle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="13" selection-start="99" selection-end="99" vertical-scroll-proportion="0.0">
+            <state line="8" column="13" selection-start="135" selection-end="135" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -156,7 +215,7 @@
       <file leaf-file-name="Reddit.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Reddit.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="217" column="130" selection-start="7078" selection-end="7078" vertical-scroll-proportion="0.0">
+            <state line="329" column="77" selection-start="10780" selection-end="10848" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="n#!!doc;n#SslLoginUrl#0;n#Reddit#0" expanded="false" />
@@ -169,30 +228,11 @@
                 <element signature="method#GetMe#0;class#Reddit#0" expanded="false" />
                 <element signature="method#GetSubreddit#0;class#Reddit#0" expanded="false" />
                 <element signature="method#ComposePrivateMessage#0;class#Reddit#0" expanded="false" />
+                <element signature="method#CreateRequest#0;class#Reddit#0" expanded="false" />
                 <element signature="method#CreateGet#0;class#Reddit#0" expanded="false" />
                 <element signature="method#CreatePost#0;class#Reddit#0" expanded="false" />
                 <element signature="method#GetResponseString#0;class#Reddit#0" expanded="false" />
                 <element signature="e#10830#10845#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Thing.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Thing.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="5" selection-start="1221" selection-end="1221" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JsonIgnore.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/JsonIgnore.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="0" selection-start="346" selection-end="346" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -205,6 +245,15 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Post.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Post.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="3" selection-start="156" selection-end="156" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -242,7 +291,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/Listing.java" />
         <option value="$PROJECT_DIR$/src/SubReddit.java" />
         <option value="$PROJECT_DIR$/src/AuthenticatedUser.java" />
         <option value="$PROJECT_DIR$/src/Thing.java" />
@@ -257,6 +305,7 @@
         <option value="$PROJECT_DIR$/src/MyExlusionStrategy.java" />
         <option value="$PROJECT_DIR$/LICENSE" />
         <option value="$PROJECT_DIR$/src/Reddit.java" />
+        <option value="$PROJECT_DIR$/src/ImageType.java" />
         <option value="$PROJECT_DIR$/src/Subreddit.java" />
       </list>
     </option>
@@ -315,6 +364,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="JRAW" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JRAW" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JRAW" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -498,7 +561,11 @@
       <created>1370541610565</created>
       <updated>1370541610565</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Flair controls added">
+      <created>1370542477451</created>
+      <updated>1370542477451</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -523,9 +590,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32182628" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32182628" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297062" sideWeight="0.670068" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -592,7 +659,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Dependencies added, ClearFlairTemplates method added&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Flair controls added" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -611,6 +678,7 @@
     <MESSAGE value="Not much, but it is a start" />
     <MESSAGE value="Reddit class complete, some base functionality has been added" />
     <MESSAGE value="Dependencies added, ClearFlairTemplates method added&#10;" />
+    <MESSAGE value="Flair controls added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -620,20 +688,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/SubredditSettings.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="13" selection-start="135" selection-end="135" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Post.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="3" selection-start="156" selection-end="156" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Comment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="41" column="17" selection-start="1072" selection-end="1072" vertical-scroll-proportion="0.0">
@@ -671,22 +725,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CreatedThing.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="20" selection-start="271" selection-end="271" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MyExlusionStrategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="13" selection-start="409" selection-end="409" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Thing.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="43" column="5" selection-start="1221" selection-end="1221" vertical-scroll-proportion="0.0">
@@ -708,23 +746,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SubredditStyle.java">
+    <entry file="file://$PROJECT_DIR$/src/CreatedThing.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="13" selection-start="99" selection-end="99" vertical-scroll-proportion="0.0">
+        <state line="13" column="20" selection-start="271" selection-end="271" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/FlairType.java">
+    <entry file="file://$PROJECT_DIR$/src/MyExlusionStrategy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="36" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0">
+        <state line="15" column="13" selection-start="409" selection-end="409" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SubredditStyle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="13" selection-start="135" selection-end="135" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Reddit.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="217" column="130" selection-start="7078" selection-end="7078" vertical-scroll-proportion="0.0">
+        <state line="329" column="77" selection-start="10780" selection-end="10848" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="n#!!doc;n#SslLoginUrl#0;n#Reddit#0" expanded="false" />
@@ -737,6 +784,7 @@
             <element signature="method#GetMe#0;class#Reddit#0" expanded="false" />
             <element signature="method#GetSubreddit#0;class#Reddit#0" expanded="false" />
             <element signature="method#ComposePrivateMessage#0;class#Reddit#0" expanded="false" />
+            <element signature="method#CreateRequest#0;class#Reddit#0" expanded="false" />
             <element signature="method#CreateGet#0;class#Reddit#0" expanded="false" />
             <element signature="method#CreatePost#0;class#Reddit#0" expanded="false" />
             <element signature="method#GetResponseString#0;class#Reddit#0" expanded="false" />
@@ -745,9 +793,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/FlairType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="36" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ImageType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="5" selection-start="115" selection-end="115" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Post.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="3" selection-start="156" selection-end="156" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Subreddit.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="218" column="22" selection-start="9004" selection-end="9004" vertical-scroll-proportion="0.8701754">
+        <state line="328" column="30" selection-start="13795" selection-end="13795" vertical-scroll-proportion="0.8210526">
           <folding>
             <element signature="n#!!doc;n#SubredditPostUrl#0;n#Subreddit#0" expanded="false" />
             <element signature="n#!!doc;n#Reddit#0;n#Subreddit#0" expanded="false" />

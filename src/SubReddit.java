@@ -1,16 +1,21 @@
 import com.google.gson.*;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.reflect.TypeToken;
-import com.sun.javafx.iio.ImageStorage;
 import org.apache.commons.beanutils.BeanUtils;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.ClientProtocolException;
+import org.apache.http.client.methods.HttpPost;
 import org.apache.http.client.methods.HttpUriRequest;
+import org.apache.http.entity.mime.MultipartEntity;
+import org.apache.http.entity.mime.content.FileBody;
+import org.apache.http.entity.mime.content.StringBody;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.joda.time.DateTime;
 
+import javax.imageio.ImageIO;
 import javax.naming.AuthenticationException;
-import java.io.IOException;
+import java.awt.image.BufferedImage;
+import java.io.*;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Type;
 
@@ -197,28 +202,90 @@ public class Subreddit extends Thing {
         String data = Reddit.GetResponseString(response);
     }
 
-    public void AddFlairTemplate(String cssClass, FlairType flairType, String text, boolean userEditable) {
-        //TODO
+    public void AddFlairTemplate(final String cssClass, final FlairType flairType, final String textin, final boolean userEditable) throws IOException, IllegalAccessException {
+        HttpUriRequest request = Reddit.CreatePost(FlairTemplateUrl, true);
+        HttpResponse response = Reddit.WritePostBody(request, new Object() {
+            String css_class = cssClass;
+            String flair_type = flairType == FlairType.Link ? "LINK_FLAIR" : "USER_FLAIR";
+            String text = textin;
+            boolean text_editable = userEditable;
+            String uh = Reddit.User.getModHash();
+            String r = Name;
+            String api_type = "json";
+
+        });
+        String data = Reddit.GetResponseString(response);
+        JsonObject json = (JsonObject) new JsonParser().parse(data);
     }
 
-    public void SetUserFlair(String user, String cssClass, String text) {
-        //TODO
+    public void SetUserFlair(final String user, final String cssClass, final String textIn) throws IOException, IllegalAccessException {
+        HttpUriRequest request = Reddit.CreatePost(SetUserFlairUrl, true);
+        HttpResponse response = Reddit.WritePostBody(request, new Object() {
+            String css_class = cssClass;
+            String text = textIn;
+            String uh = Reddit.User.getModHash();
+            String r = Name;
+            String name = user;
+        });
+        String data = Reddit.GetResponseString(response);
+
     }
 
-    public void UploadHeaderImage(String name, ImageStorage.ImageType imageType, byte[] file) {
-        //TODO
+    public void UploadHeaderImage(String name, ImageType imageType, byte[] file) throws IOException {
+        HttpPost request = (HttpPost) Reddit.CreatePost(UploadImageUrl, true);
+
+        BufferedImage image = ImageIO.read(new ByteArrayInputStream(file));
+        File newFile = new File(String.valueOf(image));
+
+        try {
+            //convert array of bytes into file
+            FileOutputStream fileOutputStream = new FileOutputStream("file");
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+        }
+        MultipartEntity multipartEntity = new MultipartEntity();
+
+        multipartEntity.addPart("name", null);
+        multipartEntity.addPart("uh", new StringBody(Reddit.User.getModHash()));
+        multipartEntity.addPart("r", new StringBody(Name));
+        multipartEntity.addPart("img_type", new StringBody(imageType == ImageType.PNG ? "png" : "jpg"));
+        multipartEntity.addPart("upload", new StringBody(""));
+        multipartEntity.addPart("header", new StringBody("1"));
+        multipartEntity.addPart("file", new FileBody(newFile));
+        request.setEntity(multipartEntity);
+        DefaultHttpClient client = new DefaultHttpClient();
+        HttpResponse response = client.execute(request);
+        String data = Reddit.GetResponseString(response);
+
+        //TODO: Detect Errors
     }
 
-    public SubredditStyle GetStyleSheet() {
-        return null; //TODO
+    public SubredditStyle GetStyleSheet() throws IOException {
+        HttpUriRequest request = Reddit.CreateGet(String.format(StylesheetUrl, Name), true);
+        HttpResponse response = new DefaultHttpClient().execute(request);
+        String result = Reddit.GetResponseString(response);
+        JsonObject json = (JsonObject) new JsonParser().parse(result);
+        return new SubredditStyle(Reddit, this, json);
     }
 
-    public void AcceptModeratorInvite() {
-        //TODO
+    public void AcceptModeratorInvite() throws IOException, IllegalAccessException {
+        HttpUriRequest request = Reddit.CreatePost(AcceptModeratorInviteUrl, true);
+        HttpResponse response = Reddit.WritePostBody(request, new Object() {
+            String api_type = "json";
+            String uh = Reddit.User.getModHash();
+            String r = Name;
+        });
     }
 
-    public void RemoveModerator(String id) {
-        //TODO
+    public void RemoveModerator(final String idIn) throws IOException, IllegalAccessException {
+        HttpUriRequest request = Reddit.CreatePost(LeaveModerationUrl, true);
+        HttpResponse response = Reddit.WritePostBody(request, new Object() {
+            String api_type = "json";
+            String uh = Reddit.User.getModHash();
+            String r = Name;
+            String type = "moderator";
+            String id = idIn;
+        });
     }
 
     @Override
@@ -226,12 +293,41 @@ public class Subreddit extends Thing {
         return "/r/" + DisplayName;
     }
 
-    public Post SubmitTextPost(String title, String text) {
-        return null;//TODO
+    public Post SubmitTextPost(final String titleIn, final String textIn) throws Exception {
+        if (Reddit.User == null)
+            throw new Exception("No user logged in.");
+        HttpUriRequest request = Reddit.CreatePost(SubmitLinkUrl, true);
+
+        HttpResponse response = Reddit.WritePostBody(request, new Object() {
+            String api_type = "json";
+            String kind = "self";
+            String text = textIn;
+            String title = titleIn;
+            String uh = Reddit.User.getModHash();
+        });
+        String result = Reddit.GetResponseString(response);
+        JsonObject json = (JsonObject) new JsonParser().parse(result);
+        return new Post(Reddit, (JsonObject) json.get("json"));
+        //TODO: Error handling
     }
 
-    public Post SubmitPost(String title, String url) {
-        return null;//TODO
+    public Post SubmitPost(final String titleIn, final String urlIn) throws Exception {
+        if (Reddit.User == null)
+            throw new Exception("No user logged in.");
+        HttpUriRequest request = Reddit.CreatePost(SubmitLinkUrl, true);
+        HttpResponse response = Reddit.WritePostBody(request, new Object() {
+            String api_type = "json";
+            String extension = "json";
+            String kind = "link";
+            String sr = Title;
+            String title = titleIn;
+            String uh = Reddit.User.getModHash();
+            String url = urlIn;
+        });
+        String result = Reddit.GetResponseString(response);
+        JsonObject json = (JsonObject) new JsonParser().parse(result);
+        return new Post(Reddit, (JsonObject) json.get("json"));
+        //TODO: Error Handling
     }
 
 
