@@ -22,6 +22,7 @@ import org.joda.time.LocalDateTime;
 import javax.naming.AuthenticationException;
 import java.io.IOException;
 import java.lang.reflect.Field;
+import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Type;
 import java.net.UnknownHostException;
 import java.util.ArrayList;
@@ -165,7 +166,7 @@ public class Reddit {
      * @return The requested subreddit.
      * @throws IOException
      */
-    public Subreddit GetSubreddit(String name) throws IOException {
+    public Subreddit GetSubreddit(String name) throws IOException, InvocationTargetException, IllegalAccessException {
         if (name.startsWith("r/")) {
             name = name.substring(2);
         }
@@ -283,7 +284,7 @@ public class Reddit {
      * @return
      * @throws IOException
      */
-    protected Thing GetThing(String url, boolean prependDomain) throws IOException {
+    protected Thing GetThing(String url, boolean prependDomain) throws IOException, InvocationTargetException, IllegalAccessException {
         HttpClient client = new DefaultHttpClient();
         HttpUriRequest request = CreateGet(url, prependDomain);
         HttpResponse response = client.execute(request);

@@ -1,6 +1,8 @@
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 
+import java.lang.reflect.InvocationTargetException;
+
 /**
  * User: Erik
  * Date: 5-6-13
@@ -13,7 +15,7 @@ public class Thing {
     private String Kind;
     private String Shortlink;
 
-    public static Thing Parse(Reddit reddit, JsonObject json) {
+    public static Thing Parse(Reddit reddit, JsonObject json) throws InvocationTargetException, IllegalAccessException {
         String kind = json.get("kind").getAsString();
         switch (kind) {
             case "t1":

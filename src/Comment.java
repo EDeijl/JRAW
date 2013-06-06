@@ -4,6 +4,7 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 
 import java.io.IOException;
+import java.lang.reflect.InvocationTargetException;
 
 /**
  * User: Erik
@@ -37,7 +38,7 @@ public class Comment extends VotableThing {
     private Comment[] Comments;
     //endregion
 
-    public Comment(Reddit reddit, JsonObject token) {
+    public Comment(Reddit reddit, JsonObject token) throws InvocationTargetException, IllegalAccessException {
 
         super(reddit, token);
         //TODO Constructor
